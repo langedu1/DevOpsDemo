@@ -3,7 +3,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "DevOpsDemo FS2024",
+            "title": "DevOps Eduard",
             "formList": [
                 {
                     "id": "OwnUserForm",
@@ -125,6 +125,14 @@ export class GuiModel {
                                 "form" : "ToDoForm"
                             }
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "TestKachel" },
+                            "icon": "fa-group",
+                            "color": "red",
+                            "page": "modulePage",
+                            "width": 2,
+                           },
                         {
                             "type": "list",
                             "name": "ToDo",
