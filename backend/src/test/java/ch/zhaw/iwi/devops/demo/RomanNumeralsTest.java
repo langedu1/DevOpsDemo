@@ -10,4 +10,10 @@ public class RomanNumeralsTest {
         RomanNumerals roman = new RomanNumerals();
         assertEquals("I", roman.toRoman(1), "1 should be converted to 'I'");
     }
+
+    @Test
+    public void testTwoReturnsII() {
+    RomanNumerals roman = new RomanNumerals();
+    assertEquals("II", roman.toRoman(2));
+}
 }
