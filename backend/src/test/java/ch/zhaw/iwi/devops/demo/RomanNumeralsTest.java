@@ -22,5 +22,11 @@ public class RomanNumeralsTest {
     RomanNumerals roman = new RomanNumerals();
     assertEquals("III", roman.toRoman(3));
 }
+@Test
+public void testFourReturnsIV() {
+    RomanNumerals roman = new RomanNumerals();
+    assertEquals("IV", roman.toRoman(4));
+}
+
 
 }
