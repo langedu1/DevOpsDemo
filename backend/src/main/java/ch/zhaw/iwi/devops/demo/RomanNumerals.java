@@ -1,7 +1,7 @@
 package ch.zhaw.iwi.devops.demo;
 
 public class RomanNumerals {
-    public String toRoman(int number) {
+  /*  public String toRoman(int number) {
         if (number >= 50) {
             return "L" + toRoman(number - 50);
         } else if (number >= 10) {
@@ -20,8 +20,15 @@ public class RomanNumerals {
             return "II";
         }
         return "I";
+    }*/ 
+    public String toRoman(int number) {
+        String roman = "";
+        while (number >= 9) { roman += "IX"; number -= 9; }
+        while (number >= 5) { roman += "V"; number -= 5; }
+        while (number >= 4) { roman += "IV"; number -= 4; }
+        while (number >= 1) { roman += "I"; number -= 1; }
+        return roman;
     }
-    
 
 }
     
