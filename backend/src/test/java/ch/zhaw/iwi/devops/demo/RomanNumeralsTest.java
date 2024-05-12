@@ -15,5 +15,12 @@ public class RomanNumeralsTest {
     public void testTwoReturnsII() {
     RomanNumerals roman = new RomanNumerals();
     assertEquals("II", roman.toRoman(2));
+    }
+
+    @Test
+    public void testThreeReturnsIII() {
+    RomanNumerals roman = new RomanNumerals();
+    assertEquals("III", roman.toRoman(3));
 }
+
 }
