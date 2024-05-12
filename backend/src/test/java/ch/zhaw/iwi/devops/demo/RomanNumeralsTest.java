@@ -27,6 +27,11 @@ public void testFourReturnsIV() {
     RomanNumerals roman = new RomanNumerals();
     assertEquals("IV", roman.toRoman(4));
 }
+@Test
+public void testFiveReturnsV() {
+    RomanNumerals roman = new RomanNumerals();
+    assertEquals("V", roman.toRoman(5));
+}
 
 
 }
