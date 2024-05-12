@@ -42,6 +42,11 @@ public void testNineReturnsIX() {
     RomanNumerals roman = new RomanNumerals();
     assertEquals("IX", roman.toRoman(9));
 }
+@Test
+public void testTenReturnsX() {
+    RomanNumerals roman = new RomanNumerals();
+    assertEquals("X", roman.toRoman(10));
+}
 
 
 }
