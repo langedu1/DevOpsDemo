@@ -54,4 +54,11 @@ public void testFiftyReturnsL() {
     RomanNumerals roman = new RomanNumerals();
     assertEquals("L", roman.toRoman(50));
 }
+
+@Test
+public void testOneHundredReturnsC() {
+    RomanNumerals roman = new RomanNumerals();
+    assertEquals("C", roman.toRoman(100));
+}
+
 }
