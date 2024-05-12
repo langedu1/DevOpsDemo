@@ -2,7 +2,9 @@ package ch.zhaw.iwi.devops.demo;
 
 public class RomanNumerals {
     public String toRoman(int number) {
-        if (number == 5) {
+        if (number == 6) {
+            return "VI";
+        } else if (number == 5) {
             return "V";
         } else if (number == 4) {
             return "IV";
@@ -13,6 +15,7 @@ public class RomanNumerals {
         }
         return "I";
     }
+    
     
 }
     
