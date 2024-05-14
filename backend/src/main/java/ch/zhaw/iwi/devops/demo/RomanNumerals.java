@@ -21,6 +21,7 @@ public class RomanNumerals {
         }
         return "I";
     }*/ 
+
     public String toRoman(int number) {
         String roman = "";
         while (number >= 100) { roman += "C"; number -= 100; }
@@ -32,6 +33,12 @@ public class RomanNumerals {
         while (number >= 1) { roman += "I"; number -= 1; }
         return roman;
     }
+
+    public int addNumbers(int num1, int num2) {
+        return num1 + num2;
+    }
+    
+
 
 }
     
