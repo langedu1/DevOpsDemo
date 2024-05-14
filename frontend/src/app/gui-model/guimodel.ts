@@ -6,7 +6,7 @@ export class GuiModel {
             "title": "DevOps Eduard",
             "formList": [
                 {
-                    "id": "OwnUserForm",
+                    "id": 'OwnUserForm',
                     "title": "NotImplemented",
                     "formFieldList": [
                         {
