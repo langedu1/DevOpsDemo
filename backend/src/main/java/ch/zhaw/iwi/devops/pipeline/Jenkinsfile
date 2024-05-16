@@ -15,6 +15,7 @@ fileExists 'backend/src/main/java/ch/zhaw/iwi/devops/demo/RomanNumerals.java'
 sh 'echo Check if File ToDo.java exists'
 fileExists 'backend/src/main/java/ch/zhaw/iwi/devops/demo/ToDo.java'
 }
+
 }
 stage('Deploy') {
 steps {
