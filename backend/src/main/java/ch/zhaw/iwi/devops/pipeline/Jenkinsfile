@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                sh 'echo checkout'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/langedu1/DevOpsDemo']])
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo test'
+            }
+        }
+        stage('Check for File') {
+            steps {
+                sh 'echo check of the existance of files'
+                sh 'echo check if file RomanNumerals.java exists'
+                fileExists 'backend/src/main/java/ch/zhaw/iwi/devops/demo/RomanNumerals.java'
+                sh 'echo Check if File ToDos.java exists'
+                fileExists 'backend/src/main/java/ch/zhaw/iwi/devops/demo/ToDo.java'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo deploy'
+            }
+        }
+    }
+}
